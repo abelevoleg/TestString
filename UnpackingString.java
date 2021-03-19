@@ -2,10 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 class UnpackingString {
-    private static String unpacking = "";
+    private static String unpacking;
     private static List<String> str = new ArrayList<>();
 
     static String unpack(String original) {
+        unpacking = "";
         split(original);
         runUnpack();
         return unpacking;
